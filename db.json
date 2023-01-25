@@ -1,0 +1,247 @@
+{
+  "accessRegister": [
+    {
+      "id": "1",
+      "type": "email",
+      "name": "email",
+      "tooltip": "Favor digitar seu Email",
+      "label": "Email",
+      "placeholder": "email",
+      "span": 24,
+      "validations": [
+        {
+          "type": "email",
+          "message": "Ops! Favor preencher um email válido"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "type": "password",
+      "name": "password",
+      "tooltip": "Este é um campo de senha",
+      "label": "Senha",
+      "placeholder": "",
+      "span": 24,
+      "validations": [
+        {
+          "type": "required",
+          "message": "Ops! Campo de preenchimento obrigatório"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "type": "password",
+      "name": "passwordCheck",
+      "tooltip": "Este é um campo do tipo Mask",
+      "label": "Confirmar Senha",
+      "placeholder": "",
+      "span": 24,
+      "validations": [
+        {
+          "type": "required",
+          "message": "Ops! Campo de preenchimento obrigatório"
+        }
+      ]
+    }
+  ],
+  "personalRegister": [
+    {
+      "id": "1",
+      "type": "text",
+      "name": "name",
+      "label": "Nome:",
+      "required": true,
+      "placeholder": "",
+      "span": 24,
+      "tooltip": "Adicione seu name nesse campo",
+      "validations": [
+        {
+          "type": "required",
+          "message": "nome precisa ser preenchido"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "type": "email",
+      "name": "email",
+      "label": "Email:",
+      "required": true,
+      "placeholder": "",
+      "span": 24,
+      "tooltip": "Adicione seu name nesse campo",
+      "validations": [
+        {
+          "type": "required",
+          "message": "sobrenome precisa ser preenchido"
+        },
+        {
+          "type": "email",
+          "message": "sobrenome precisa ser preenchido"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "type": "mask",
+      "name": "cpf",
+      "label": "CPF:",
+      "placeholder": "",
+      "mask": "000.000.000-00",
+      "tooltip": "Adicione seu cpf nesse campo",
+      "span": 24,
+      "validations": [
+        {
+          "type": "cpf",
+          "message": "CPF precisa ser preenchido"
+        },
+        {
+          "type": "",
+          "message": "Ops! Esse não parece ser um CPF válido"
+        }
+      ]
+    }
+  ],
+  "contactRegister": [
+    {
+      "id": "1",
+      "type": "email",
+      "name": "email",
+      "tooltip": "Este é um campo do tipo Mask",
+      "label": "Email",
+      "placeholder": "digite sua Senha aqui",
+      "span": 24,
+      "validations": [
+        {
+          "type": "required",
+          "message": "Informar Email"
+        },
+        {
+          "type": "email",
+          "message": "Ops! Esse não parece um Email válido"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "type": "mask",
+      "name": "phone",
+      "label": "Telefone Fixo",
+      "required": true,
+      "placeholder": "  ",
+      "mask": "(00) 00000-0000",
+      "span": 24,
+      "validations": [
+        {
+          "type": "required",
+          "message": "nome precisa ser preenchido"
+        },
+        {
+          "type": "phone",
+          "message": "Ops! Esse não parece ser um Telefone válido"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "type": "mask",
+      "name": "cellphone",
+      "label": "Telefone Celular",
+      "required": true,
+      "placeholder": "",
+      "mask": "(00) 00000-0000",
+      "span": 24,
+      "validations": [
+        {
+          "type": "required",
+          "message": "nome precisa ser preenchido"
+        },
+        {
+          "type": "phone",
+          "message": "Ops! Esse não parece ser um Telefone válido"
+        }
+      ]
+    }
+  ],
+  "addressRegister": [
+    {
+      "id": "1",
+      "type": "mask",
+      "name": "cep",
+      "tooltip": "Este é um campo do tipo Mask",
+      "label": "CEP",
+      "placeholder": "digite sua Senha aqui",
+      "mask": "00000-000",
+      "span": 24,
+      "validations": [
+        {
+          "type": "required",
+          "message": "Informar CEP"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "type": "text",
+      "name": "estado",
+      "label": "Estado:",
+      "required": true,
+      "placeholder": "",
+      "span": 24,
+      "tooltip": "Adicione seu name nesse campo",
+      "validations": [
+        {
+          "type": "",
+          "message": "nome precisa ser preenchido"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "type": "text",
+      "name": "cidade",
+      "label": "Cidade:",
+      "required": true,
+      "placeholder": "",
+      "span": 24,
+      "tooltip": "Adicione seu name nesse campo",
+      "validations": [
+        {
+          "type": "",
+          "message": "nome precisa ser preenchido"
+        }
+      ]
+    }
+  ],
+  "validationRegister": [
+    {
+      "id": "10",
+      "type": "radio",
+      "name": "radio",
+      "tooltip": "Este é um campo do tipo Radio",
+      "label": "Selecione por onde deseja validar sua conta",
+      "defaultValue": "",
+      "span": 24,
+      "customFields": {
+        "options": [
+          {
+            "label": "anderson@email.com.br",
+            "value": "anderson@email.com.br"
+          },
+          {
+            "label": "(11) 00000-00000",
+            "value": "1100000-00000"
+          }
+        ]
+      },
+      "validations": [
+        {
+          "type": "required",
+          "message": "Este campo é obrigatório"
+        }
+      ]
+    }
+  ]
+}
